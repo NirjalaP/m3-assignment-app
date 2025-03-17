@@ -1,7 +1,6 @@
 require("dotenv").config();
- require("dotenv").config();
+require("./models/registration");
  
- const mongoose = require("mongoose");
  const mongoose = require("mongoose");
  
  mongoose.connect(process.env.DATABASE, {
