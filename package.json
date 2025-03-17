@@ -1,0 +1,19 @@
+{
+  "name": "m3-assignment-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NirjalaP/m3-assignment-app.git"
+  },
+  "author": "Nirjala Prajapati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NirjalaP/m3-assignment-app/issues"
+  },
+  "homepage": "https://github.com/NirjalaP/m3-assignment-app#readme",
+  "description": ""
+}
