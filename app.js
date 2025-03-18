@@ -1,9 +1,11 @@
 const express = require("express");
-
-const router = express.Router();
+const path = require("path");
+ const routes = require("./routes/index");
  
-router.get("/", function (req, res) {
-    res.send('It Works');
-});
-
- module.exports = router;
+ const app = express();
+ 
+ app.set("views", path.join(__dirname, "views"));
+ app.set("view engine", "pug");
+ 
+ // const bodyParser = require("body-parser");
+ // app.use(bodyParser.urlencoded({ extended: true }));
