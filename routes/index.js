@@ -8,7 +8,7 @@ const mongoose = require("mongoose")
  const Registration = mongoose.model("Registration");
 
  const basic = auth.basic({
-    file: path.join(__dirname, '../users.htpasswd'),
+    file: path.join(__dirname, "../users.htpasswd"),
 });
 
  router.get("/", function (req, res) {
@@ -44,14 +44,16 @@ const mongoose = require("mongoose")
    }
  );
 
- router.get("/registrations", (req, res) => {
-    Registration.find()
-      .then((registrations) => {
-        res.render("index", { title: "Listing registrations", registrations });
-      })
-      .catch(() => {
-        res.send("Sorry! Something went wrong.");
-      });
-});
-
+ router.get(
+    "/registrations",
+    basic.check((req, res) => {
+      Registration.find()
+        .then((registrations) => {
+          res.render("index", { title: "Listing registrations", registrations });
+        })
+        .catch(() => {
+          res.send("Sorry! Something went wrong.");
+        });
+    })
+  );
  module.exports = router;
