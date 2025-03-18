@@ -1,31 +1,33 @@
 {
   "name": "m3-assignment-app",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon ./start.js"    
+    "watch": "nodemon ./start.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NirjalaP/m3-assignment-app.git"
+    "url": "git+https://github.com/shishamchudal/m3-assignment-app.git"
   },
-  "author": "Nirjala Prajapati",
+  "author": "Shisham Chudal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NirjalaP/m3-assignment-app/issues"
+    "url": "https://github.com/shishamchudal/m3-assignment-app/issues"
   },
-  "homepage": "https://github.com/NirjalaP/m3-assignment-app#readme",
+  "homepage": "https://github.com/shishamchudal/m3-assignment-app#readme",
   "dependencies": {
     "body-parser": "^1.20.3",
-     "dotenv": "^16.4.7",
-     "express": "^4.21.2",
-     "mongodb": "^6.14.2",
-     "mongoose": "^8.12.1",
-      "pug": "^3.0.3"
-   },
-   "devDependencies": {
-     "nodemon": "^3.1.9"
-   },
-  "description": ""
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "http-auth": "^4.2.0",
+    "mongodb": "^6.14.2",
+    "mongoose": "^8.12.1",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
