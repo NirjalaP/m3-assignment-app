@@ -7,12 +7,12 @@ extends layout
              for error in errors
                  li= error.msg
  
-     form(action="." method="POST")
-         label(for="name") Name:
+form(action="." method="POST" class="form-registration")         label(for="name") Name:
          input(
              type="text" 
              id="name" 
              name="name"
+              class="form-control"
              value=data.name
          )
  
@@ -21,7 +21,8 @@ extends layout
              type="email" 
              id="email" 
              name="email"
+              class="form-control"
              value=data.email
          )
  
-         input(type="submit" value="Submit")
+input(type="submit" value="Submit" class="bth btn-lg btn-primary btn-block")
