@@ -1,6 +1,7 @@
 const path = require("path");
- const auth = require("http-auth");
+const auth = require("http-auth");
 const express = require("express");
+const bcrypt = require("bcrypt");
 const mongoose = require("mongoose")
 
  const { check, validationResult } = require("express-validator");
@@ -20,13 +21,19 @@ const mongoose = require("mongoose")
    [
      check("name").isLength({ min: 1 }).withMessage("Please enter a name"),
      check("email").isLength({ min: 1 }).withMessage("Please enter an email"),
+     check("username").isLength({ min: 1 }).withMessage("Please enter a username"),
+     check("password").isLength({ min: 6 }).withMessage("Password must be at least 6 characters long"),
    ],
-   function (req, res) {
+   async (req, res) => {
      // console.log(req.body);
      const errors = validationResult(req);
      if (errors.isEmpty()) {const registration = new Registration(req.body);
-        registration
-          .save()
+      //generate salt to hash password
+      const salt = await bcrypt.genSalt(10);
+
+      //set userpassword to hash password
+      registration.password = await bcrypt.hash(registration.password, salt);
+      registration.save()
           .then(() => {
             res.send("Thank you for your registration!");
           })
