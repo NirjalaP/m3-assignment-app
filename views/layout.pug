@@ -1,8 +1,23 @@
+
+//- doctype html
+//- html
+//-   head
+//-     title= `${title}`
+//-     link(rel='stylesheet', href='/css/bootstrap.min.css')
+//-     link(rel='stylesheet', href='/css/styles.css')
+
+//-   body
+//-     div.container.listing-reg
+//-       h1 My Amazing App
+
+//-       block content
+
 doctype html
 head
   link(rel='preconnect' href='https://fonts.gstatic.com')
   link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap' rel='stylesheet')
   link(rel='stylesheet', href='/css/styles.css')
+  block styles
   script(src='script.js')
 header
   nav.nav-container
@@ -30,6 +45,7 @@ main
       <p class="warning">WARNING</p>
     button.submit-buttton View Recipes
   section#intro-image
-    img(src='images/louisiana-barbecued-shrimp.webp' alt='Louisiana Barbecued Shrimp')
+    //- img(src='images/louisiana-barbecued-shrimp.webp' alt='Louisiana Barbecued Shrimp')
+    block content
 footer
   | &copy; Copyright 2021

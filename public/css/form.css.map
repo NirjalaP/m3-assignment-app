@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/form.scss","../scss/colors.scss"],"names":[],"mappings":"AAOA;EACC;EACA;EACA;EACA;EACA;EACA;;;AAED;EACC;EACA;EACA;EACA;;AACA;EACC;EACA;;AAED;EACC;EACA;EACA;EACA;;AAED;EACC;EACA;EACA;EACA,kBClCiB;EDmCjB,OCjCU;EDkCV;EACA;EACA;EACA;;AACA;EACC,kBCxCgB;;;AD4CnB;EACC;;;AAED;EACC;;;AAED;EACC;EACA,OAlDS;EAmDT;EACA","file":"form.css"}

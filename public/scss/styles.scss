@@ -1,0 +1,111 @@
+/* Nesting */
+/* SCSS */
+/* Variables */
+/*# sourceMappingURL=styles.css.map */
+header {
+	display: flex;
+	justify-content: space-between; // Aligns left and right sections
+	align-items: center;
+	padding: 10px;
+  
+	nav.nav-container {
+	  display: flex;
+	  width: 100%;
+	  justify-content: space-between;
+	  align-items: center;
+  
+	  ul {
+		list-style-type: none;
+		display: flex;
+		padding: 0;
+		margin: 0;
+  
+		li {
+		  margin: 0 10px;
+		  color: white;
+		  
+		  a {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			&:hover {
+			  text-decoration: underline;
+			}
+		  }
+		}
+	  }
+  
+	  .left-nav {
+		display: flex;
+	  }
+  
+	  .right-nav {
+		margin-left: auto; // Push Recipes to the right
+	  }
+	}
+  }
+  
+html {
+	font-size: 1em;
+	width: 100%;
+}
+body {
+	font-family: Arial, Helvetica, Sans-Serif;
+	background: #daaa0e;
+}
+header {
+	height: 50px;
+	width: 1350px;
+	margin: 0.8em auto 1em auto;
+}
+main {
+	background: white;
+	width: 1350px;
+	min-height: 535px;
+	padding: 1.5%;
+	margin: 0 auto;
+	#intro-image {
+		float: left;
+		width: 800px;
+		img {
+			width: 800px;
+		}
+	}
+	#intro-text {
+		width: 550px;
+		height: 407px;
+		float: left;
+		background: #d4d5d8;
+		text-align: center;
+		padding-top: 8em;
+		h3 {
+			font-size: 2em;
+			color: #313130;
+		}
+		span {
+			font-family: "Sacramento", cursive;
+			font-size: 2em;
+		}
+	}
+}
+footer {
+	width: 1350px;
+	margin: 2em auto;
+	padding-left: 80px;
+	font-size: 0.85em;
+}
+button {
+	color: white;
+	width: 100px;
+	height: 40px;
+	background: #daaa0e;
+	margin-top: 2em;
+}
+.submit-buttton {
+	color: white;
+	width: 100px;
+	height: 40px;
+	background: #daaa0e;
+	margin-top: 2em;
+	border: 1px #313130;
+}

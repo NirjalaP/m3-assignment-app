@@ -1,0 +1,30 @@
+$color_1: white;
+$background-color_1: #343a40;
+$background-color_2: #f2f2f2;
+$background-color_3: #ddd;
+
+.listing-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	th {
+		border: 1px solid #ddd;
+		padding: 8px;
+		text-align: left;
+		background-color: $background-color_1;
+		color: $color_1;
+	}
+	td {
+		border: 1px solid #ddd;
+		padding: 8px;
+		text-align: left;
+	}
+	tr {
+		&:nth-child(even) {
+			background-color: $background-color_2;
+		}
+		&:hover {
+			background-color: $background-color_3;
+		}
+	}
+}
